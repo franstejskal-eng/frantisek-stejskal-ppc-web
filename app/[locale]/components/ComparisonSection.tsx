@@ -6,17 +6,17 @@ import { useTranslations } from "next-intl";
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const MONTHS = ["Led","Úno","Bře","Dub","Kvě","Čvn","Čvc","Srp","Zář","Říj","Lis","Pro"];
-const BUDGET_PER_MONTH = 10_000; // Kč
+const BUDGET_PER_MONTH = 150_000; // Kč
 
-// Monthly conversion value (Kč)
-const BAD_VALUES  = [11500, 9800, 13200, 10500, 14800, 12000, 16500, 13000, 17800, 14500, 19500, 17000];
-const GOOD_VALUES = [11500, 15500, 20500, 26500, 33000, 40000, 46500, 52500, 58000, 62500, 66500, 70000];
+// Monthly conversion value (Kč) – 150 000 Kč/month budget
+const BAD_VALUES  = [172500, 147000, 198000, 157500, 222000, 180000, 247500, 195000, 267000, 217500, 292500, 255000];
+const GOOD_VALUES = [172500, 232500, 307500, 397500, 495000, 600000, 697500, 787500, 870000, 937500, 997500, 1_050_000];
 
 // CPA (Kč)
 const BAD_CPA  = [2200, 2900, 1950, 3100, 2300, 3200, 2100, 3300, 2000, 3050, 2450, 2700];
 const GOOD_CPA = [2200, 1900, 1600, 1350, 1150, 990, 870, 780, 710, 665, 630, 595];
 
-const MAX_VALUE = 75_000;
+const MAX_VALUE = 1_125_000;
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -180,7 +180,6 @@ function Panel({
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const months = progress * 12;
-  const curVal = valueAt(values, Math.min(months, 11.99));
   const cumVal = cumulative(values, months);
   const curCpa = valueAt(cpaValues, Math.min(months, 11.99));
   const spentSoFar = Math.min(months, 12) * BUDGET_PER_MONTH;
@@ -217,11 +216,7 @@ function Panel({
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-2 gap-4 px-5 py-4 border-t border-[rgba(255,255,255,0.05)] mt-auto">
-        <Stat
-          label={t("monthlyValue")}
-          value={fmt(curVal)}
-        />
+      <div className="grid grid-cols-3 gap-4 px-5 py-4 border-t border-[rgba(255,255,255,0.05)] mt-auto">
         <Stat
           label={t("cpa")}
           value={fmt(curCpa)}
