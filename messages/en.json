@@ -21,6 +21,23 @@
     "stat3Value": "Since 2019",
     "stat3Label": "in the industry"
   },
+  "comparison": {
+    "sectionLabel": "The difference in practice",
+    "headline": "What it looks like without management – and with it",
+    "description": "Same budget, same period. The only difference is who manages the campaigns.",
+    "badTitle": "Without management",
+    "goodTitle": "With František's management",
+    "budget": "Budget",
+    "conversions": "Conversions",
+    "cpa": "Cost per conversion",
+    "roi": "ROI",
+    "alert1": "High CPC",
+    "alert2": "Budget depleted",
+    "alert3": "No conversions",
+    "badge1": "Optimized",
+    "badge2": "Low CPC",
+    "badge3": "Conversions growing"
+  },
   "problem": {
     "sectionLabel": "The Problem",
     "headline": "Most businesses are losing money on ads unnecessarily",

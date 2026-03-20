@@ -21,6 +21,23 @@
     "stat3Value": "Od 2019",
     "stat3Label": "na trhu"
   },
+  "comparison": {
+    "sectionLabel": "Rozdíl v praxi",
+    "headline": "Jak to vypadá bez správy – a s ní",
+    "description": "Stejný rozpočet, stejné období. Jediný rozdíl je kdo kampaně spravuje.",
+    "badTitle": "Bez správy",
+    "goodTitle": "Se správou Františka",
+    "budget": "Rozpočet",
+    "conversions": "Konverze",
+    "cpa": "Cena za konverzi",
+    "roi": "ROI",
+    "alert1": "Vysoký CPC",
+    "alert2": "Budget vyčerpán",
+    "alert3": "Žádné konverze",
+    "badge1": "Optimalizováno",
+    "badge2": "Nízký CPC",
+    "badge3": "Konverze rostou"
+  },
   "problem": {
     "sectionLabel": "Problém",
     "headline": "Většina firem zbytečně přichází o peníze v reklamách",

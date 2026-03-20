@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ProblemSection from "./components/ProblemSection";
+import ComparisonSection from "./components/ComparisonSection";
 import PlanSection from "./components/PlanSection";
 import ResultsSection from "./components/ResultsSection";
 import HomeCTA from "./components/HomeCTA";
@@ -13,6 +14,7 @@ export default function Home() {
       <main>
         <Hero />
         <ProblemSection />
+        <ComparisonSection />
         <PlanSection />
         <ResultsSection />
         <HomeCTA />

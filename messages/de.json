@@ -21,6 +21,23 @@
     "stat3Value": "Seit 2019",
     "stat3Label": "in der Branche"
   },
+  "comparison": {
+    "sectionLabel": "Der Unterschied in der Praxis",
+    "headline": "So sieht es ohne Verwaltung aus – und mit ihr",
+    "description": "Gleiches Budget, gleicher Zeitraum. Der einzige Unterschied ist, wer die Kampagnen verwaltet.",
+    "badTitle": "Ohne Verwaltung",
+    "goodTitle": "Mit Františeks Verwaltung",
+    "budget": "Budget",
+    "conversions": "Conversions",
+    "cpa": "Kosten pro Conversion",
+    "roi": "ROI",
+    "alert1": "Hoher CPC",
+    "alert2": "Budget aufgebraucht",
+    "alert3": "Keine Conversions",
+    "badge1": "Optimiert",
+    "badge2": "Niedriger CPC",
+    "badge3": "Conversions wachsen"
+  },
   "problem": {
     "sectionLabel": "Das Problem",
     "headline": "Die meisten Unternehmen verlieren unnötig Geld mit Werbung",
