@@ -17,16 +17,16 @@ const serviceIcons = [
   <svg key="5" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" /></svg>,
 ];
 
-const serviceData = [
-  { title: "Google Ads", subtitle: "Search · Shopping · Display · YouTube", bullets: ["Search kampaně s vysokým záměrem", "Shopping kampaně s optimalizací feedu", "Display a YouTube pro brand awareness", "Conversion tracking a měření výsledků", "Správa Google Analytics a Merchant Center"] },
-  { title: "Meta Ads", subtitle: "Facebook · Instagram", bullets: ["Nastavení a optimalizace kampaní", "Tvorba a testování kreativ a copy", "Retargeting a lookalike audience", "Správa Meta Pixel a Conversion API", "A/B testování pro maximální výkon"] },
-  { title: "Reporting", subtitle: "Looker Studio · Google Analytics", bullets: ["Dashboardy na míru vašemu byznysu", "Automatická aktualizace v reálném čase", "Propojení Google Ads, Meta, Analytics", "Měsíční komentovaný report", "Přístup odkudkoli, bez instalace"] },
-  { title: "UX konzultace", subtitle: "Konverzní optimalizace", bullets: ["Analýza chování uživatelů na webu", "Identifikace míst, kde zákazníci odcházejí", "Doporučení pro landing pages", "A/B testování klíčových prvků", "Spolupráce s webovým týmem"] },
-  { title: "SEO poradenství", subtitle: "Organický výkon", bullets: ["Technický SEO audit webu", "Analýza klíčových slov", "Doporučení obsahu a struktury", "Propojení PPC a SEO strategie", "Monitoring pozic a organického výkonu"] },
-];
-
 export default async function SluzbyPage() {
   const t = await getTranslations("services");
+
+  const services = [
+    { title: t("s1Title"), subtitle: t("s1Subtitle"), bullets: [t("s1b1"), t("s1b2"), t("s1b3"), t("s1b4"), t("s1b5")] },
+    { title: t("s2Title"), subtitle: t("s2Subtitle"), bullets: [t("s2b1"), t("s2b2"), t("s2b3"), t("s2b4"), t("s2b5")] },
+    { title: t("s3Title"), subtitle: t("s3Subtitle"), bullets: [t("s3b1"), t("s3b2"), t("s3b3"), t("s3b4"), t("s3b5")] },
+    { title: t("s4Title"), subtitle: t("s4Subtitle"), bullets: [t("s4b1"), t("s4b2"), t("s4b3"), t("s4b4"), t("s4b5")] },
+    { title: t("s5Title"), subtitle: t("s5Subtitle"), bullets: [t("s5b1"), t("s5b2"), t("s5b3"), t("s5b4"), t("s5b5")] },
+  ];
 
   return (
     <>
@@ -46,7 +46,7 @@ export default async function SluzbyPage() {
 
         <section className="py-24 bg-[oklch(0.10_0_0)]">
           <div className="max-w-6xl mx-auto px-6 space-y-8">
-            {serviceData.map((service, i) => (
+            {services.map((service, i) => (
               <div key={service.title} className="bg-[oklch(0.12_0_0)] border border-[oklch(0.18_0_0)] rounded-2xl p-8 lg:p-10 hover:border-[oklch(0.55_0.22_260/0.25)] transition-colors duration-300 lg:flex gap-10 items-start">
                 <div className="lg:w-72 shrink-0 mb-6 lg:mb-0">
                   <div className="w-14 h-14 bg-[oklch(0.55_0.22_260/0.12)] border border-[oklch(0.55_0.22_260/0.25)] rounded-xl flex items-center justify-center text-[oklch(0.65_0.18_260)] mb-5">
