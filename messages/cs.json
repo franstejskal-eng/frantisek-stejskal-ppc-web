@@ -36,7 +36,12 @@
     "alert3": "Žádné konverze",
     "badge1": "Optimalizováno",
     "badge2": "Nízký CPC",
-    "badge3": "Konverze rostou"
+    "badge3": "Konverze rostou",
+    "month": "Měsíc",
+    "monthlyValue": "Hodnota konverzí",
+    "totalValue": "Celková hodnota",
+    "spend": "Výdaj",
+    "disclaimer": "Ilustrativní data. Skutečné výsledky se liší dle oboru a nastavení kampaní."
   },
   "problem": {
     "sectionLabel": "Problém",

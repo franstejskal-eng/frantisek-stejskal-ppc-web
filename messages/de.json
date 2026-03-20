@@ -36,7 +36,12 @@
     "alert3": "Keine Conversions",
     "badge1": "Optimiert",
     "badge2": "Niedriger CPC",
-    "badge3": "Conversions wachsen"
+    "badge3": "Conversions wachsen",
+    "month": "Monat",
+    "monthlyValue": "Conversion-Wert",
+    "totalValue": "Gesamtwert",
+    "spend": "Ausgaben",
+    "disclaimer": "Illustrative Daten. Tatsächliche Ergebnisse variieren je nach Branche und Kampagnen-Setup."
   },
   "problem": {
     "sectionLabel": "Das Problem",
